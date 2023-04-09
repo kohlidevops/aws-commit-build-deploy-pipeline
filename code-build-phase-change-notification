@@ -1,0 +1,32 @@
+{
+  "source": [ 
+    "aws.codebuild"
+  ], 
+  "detail-type": [
+    "CodeBuild Build Phase Change" 
+  ],
+  "detail": {
+    "completed-phase": [
+      "SUBMITTED",
+      "PROVISIONING",
+      "DOWNLOAD_SOURCE",
+      "INSTALL",
+      "PRE_BUILD",
+      "BUILD",
+      "POST_BUILD",
+      "UPLOAD_ARTIFACTS",
+      "FINALIZING"
+    ],
+    "completed-phase-status": [
+      "TIMED_OUT",
+      "STOPPED",
+      "FAILED", 
+      "SUCCEEDED",
+      "FAULT",
+      "CLIENT_ERROR"
+    ],
+    "project-name": [
+      "ccdemo-cb1"
+    ]
+  }  
+}
