@@ -1,0 +1,4 @@
+sudo service codedeploy-agent status
+sudo java -version
+sudo systemctl status tomcat8
+sudo systemctl start tomcat8
