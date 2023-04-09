@@ -11,3 +11,6 @@ cd /home/ec2-user
 wget https://aws-codedeploy-ap-south-1.s3.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
+sudo systemctl start tomcat.service
+sudo systemctl enable tomcat.service
+sudo systemctl start tomcat.service
