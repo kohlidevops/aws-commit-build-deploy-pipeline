@@ -1,11 +1,12 @@
 #!/bin/bash
 sudo yum update
-sudo yum install ruby
-sudo yum install wget
-sudo yum -y erase java-1.7.0-openjdk.x86_64
+sudo yum install ruby -y
+sudo yum install wget -y
+sudo yum -y erase java-1.7.0-openjdk.x86_64 
 sudo yum -y install java-1.8.0-openjdk.x86_64
 sudo yum -y install java-1.8.0-openjdk-devel
-sudo yum -y install tomcat8
+#sudo yum -y install tomcat8
+sudo amazon-linux-extras install tomcat8.5 -y
 cd /home/ec2-user
 wget https://aws-codedeploy-ap-south-1.s3.amazonaws.com/latest/install
 chmod +x ./install
